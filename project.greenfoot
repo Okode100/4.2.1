@@ -2,10 +2,10 @@
 dependency1.from=MyWorld
 dependency1.to=Car
 dependency1.type=UsesDependency
-editor.fx.0.height=736
-editor.fx.0.width=683
-editor.fx.0.x=683
-editor.fx.0.y=32
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=736
 package.numDependencies=1
 package.numTargets=2

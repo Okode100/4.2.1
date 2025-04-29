@@ -37,6 +37,11 @@ public class Car extends Actor
         turnRight();
         turnHeadlightsOn();
         turnHeadlightsOff();
+        moveHead();
+        moveReverse();
+        turnWest();
+        turnEast();
+        
     }    
 
     /**
@@ -46,6 +51,11 @@ public class Car extends Actor
         if (Greenfoot.isKeyDown("up")){
             move(5);
         }
+    }
+    public void moveHead(){
+        if (Greenfoot.isKeyDown("w")){
+        move(5);
+    }
     }
     
     /**
@@ -57,12 +67,24 @@ public class Car extends Actor
         }
     }    
     
+    public void moveReverse(){
+        if (Greenfoot.isKeyDown("s")){
+        move(-1);
+    }
+    
+    }
     /**
      * Turn the car to the left every time the key "left" is pressed
      */    
     public void turnLeft(){
         if (Greenfoot.isKeyDown("left")){ 
             turn(-4);
+        }
+    }
+    public void turnWest(){
+        if (Greenfoot.isKeyDown("a")){
+            turn(-3);
+        
         }
     }
     
@@ -72,6 +94,12 @@ public class Car extends Actor
     public void turnRight(){
         if (Greenfoot.isKeyDown("right")){ 
             turn(4);
+        }
+    }
+    public void turnEast(){
+        if (Greenfoot.isKeyDown("d")){
+            turn(5);
+        
         }
     }
     
